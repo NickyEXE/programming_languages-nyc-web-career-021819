@@ -1,7 +1,11 @@
 def reformat_languages(languages)
   # your code here
-  new languages
+  new_languages = {}
+  languagelog =[]
   languages.each do |style1, prog_and_elements|
-
+    prog_and_elements.each do |program, elements|
+      if languagelog.include?(program)
+        new_languages[program][:style].push(style1)
+    end
   end
 end
