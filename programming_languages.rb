@@ -8,7 +8,7 @@ def reformat_languages(languages)
         new_languages[program][:style].push(style1)
       else
         languagelog.push(program)
-        new_languages[program]=elements.merge({[style: style1]})
+        new_languages[program]=elements.merge({style: [style1]})
       end
     end
   end
