@@ -6,6 +6,9 @@ def reformat_languages(languages)
     prog_and_elements.each do |program, elements|
       if languagelog.include?(program)
         new_languages[program][:style].push(style1)
+      else
+        languagelog.push(program)
+      end
     end
   end
 end
